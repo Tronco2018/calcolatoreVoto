@@ -9,7 +9,7 @@ function calculate(){
 	if (totalizzato > punteggioMax){
 		document.getElementById("errorLabel").innerText = "\nPunteggio totalizzato maggiore del possibile!";
 	} else if (totalizzato < 0){
-		document.getElementById("errorLabel").innerText = "\nIl punteggio totalizzato deve essere maggiore di zero";
+		document.getElementById("errorLabel").innerText = "\nIl punteggio totalizzato deve essere maggiore di zero!";
 	} else if (Number.isNaN(arrotondato)){
 		document.getElementById("errorLabel").innerText = "\nSono presenti campi sono vuoti, riprovate";	
 	} else {
