@@ -6,11 +6,42 @@
 	</head>
 	<body>
 		<h2>Calculator</h2>
+		<div class="inputs">
 			<input id="totalizzato" placeholder="Punti totalizzati"></input>
 			<input id="votoMassimo" placeholder="Voto Massimo"></input>
 			<input id="votoMinimo" placeholder="Voto Minimo"></input>
 			<input id="punteggiomax" placeholder="Punteggio Massimo"></input>
-			<button type="button" id="eq" onclick="calculate()" >=</button>
+			<button type="button" id="eq" onclick="calculate()" >Compute</button>
+			<hr>
 			<label id="resultLabel"></label>
+			<label id="errorLabel" style="color:rgb(255,0,0); margin-top:12px;"></label>
+		</div>
 	</body>
+	<style>
+		h2{
+			text-align:center;
+			margin-bottom:5px;
+		}
+		body{
+			font-family:sans-serif;
+		}
+		.inputs{
+			margin: auto;
+			padding: 10px;
+			width:60%;
+			display: flex;
+			flex-direction: column; 
+			align-items: center;     
+			justify-content: center; 
+		}
+		input{
+			margin-bottom:5px;
+		}
+		hr{
+			width:100px;
+			background-color:gray;
+			height:1px;
+			border-radius:5px;
+		}
+	</style>
 </html>
