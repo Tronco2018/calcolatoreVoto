@@ -11,7 +11,7 @@ function calculate(){
 	} else if (totalizzato < 0){
 		document.getElementById("errorLabel").innerText = "\nIl punteggio totalizzato deve essere maggiore di zero";
 	} else if (Number.isNaN(arrotondato)){
-		document.getElementById("errorLabel").innerText = "\nUno o + campi sono vuoti, riprovate";	
+		document.getElementById("errorLabel").innerText = "\nSono presenti campi sono vuoti, riprovate";	
 	} else {
 		document.getElementById("resultLabel").innerText = arrotondato;
 	}
